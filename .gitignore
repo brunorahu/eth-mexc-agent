@@ -1,0 +1,12 @@
+backend/.env
+backend/.venv/
+backend/config/risk.json
+backend/data/*.db
+backend/data/*.db-wal
+backend/data/*.db-shm
+**/__pycache__/
+*.pyc
+.pytest_cache/
+frontend/node_modules/
+frontend/dist/
+.DS_Store

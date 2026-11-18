@@ -1,0 +1,42 @@
+{
+  "tag": "20261118T001233",
+  "start": "2025-07-21",
+  "end": "2026-11-15",
+  "limit": null,
+  "risk": {
+    "initial_capital": 50000.0,
+    "fee_rate": 0.0,
+    "slippage_bps": 5.0,
+    "max_exposure_pct": 0.95,
+    "max_daily_loss_pct": 0.05,
+    "max_data_age_hours": 30.0,
+    "min_notional": 5.0,
+    "qty_step": 0.0001,
+    "signal_threshold": 0.0001
+  },
+  "llm": {
+    "ollama_version": "0.40.16",
+    "model": "qwen2.5:3b",
+    "descargado": true,
+    "digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "tamano_bytes": 1929912432,
+    "detalles": {
+      "parent_model": "",
+      "format": "gguf",
+      "family": "qwen2",
+      "families": [
+        "qwen2"
+      ],
+      "parameter_size": "3.1B",
+      "quantization_level": "Q4_K_M",
+      "context_length": 32768,
+      "embedding_length": 2048,
+      "runner": "ggml"
+    },
+    "en_memoria": true,
+    "vram_bytes": 2163568803,
+    "url": "http://127.0.0.1:11434",
+    "local": true
+  },
+  "duration_s": 1096.819377
+}

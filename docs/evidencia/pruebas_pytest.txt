@@ -1,0 +1,42 @@
+﻿============================= test session starts =============================
+platform win32 -- Python 3.14.4, pytest-9.2.0, pluggy-1.7.0 -- C:\Users\lgram\eth-mexc-agent\backend\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\lgram\eth-mexc-agent\backend
+plugins: anyio-4.16.0
+collecting ... collected 27 items
+
+tests/test_controles.py::test_sin_ventas_en_corto PASSED                 [  3%]
+tests/test_controles.py::test_limite_de_exposicion_y_sin_apalancamiento PASSED [  7%]
+tests/test_controles.py::test_perdida_diaria_maxima_bloquea PASSED       [ 11%]
+tests/test_controles.py::test_config_de_riesgo_solo_por_api_protegida PASSED [ 14%]
+tests/test_controles.py::test_validacion_estricta_de_la_propuesta[{"action":"BUY","symbol":"ETHUSDT","candle_time":"2026-11-16","justification":"x".join(["a","b"])}-JSON] PASSED [ 18%]
+tests/test_controles.py::test_validacion_estricta_de_la_propuesta[{"action":"BUY","symbol":"BTCUSDT","candle_time":"2026-11-16","justification":"pron\xf3stico alto"}-S\xedmbolo] PASSED [ 22%]
+tests/test_controles.py::test_validacion_estricta_de_la_propuesta[{"action":"BUY","symbol":"ETHUSDT","candle_time":"2026-11-15","justification":"pron\xf3stico alto"}-Fecha] PASSED [ 25%]
+tests/test_controles.py::test_validacion_estricta_de_la_propuesta[{"action":"SELL","symbol":"ETHUSDT","candle_time":"2026-11-16","justification":"pron\xf3stico bajo"}-no permitida] PASSED [ 29%]
+tests/test_controles.py::test_validacion_estricta_de_la_propuesta[{"action":"SHORT","symbol":"ETHUSDT","candle_time":"2026-11-16","justification":"pron\xf3stico bajo"}-Campos] PASSED [ 33%]
+tests/test_controles.py::test_validacion_estricta_de_la_propuesta[{"action":"BUY","symbol":"ETHUSDT","candle_time":"2026-11-16"}-Campos] PASSED [ 37%]
+tests/test_controles.py::test_propuesta_valida_y_herramienta_no_permitida_rechazada PASSED [ 40%]
+tests/test_controles.py::test_mismas_variables_que_en_entrenamiento PASSED [ 44%]
+tests/test_controles.py::test_vela_abierta_no_se_usa PASSED              [ 48%]
+tests/test_controles.py::test_ventana_insuficiente_y_desorden PASSED     [ 51%]
+tests/test_controles.py::test_no_existe_ruta_de_ordenes_reales PASSED    [ 55%]
+tests/test_controles.py::test_replay_y_metricas PASSED                   [ 59%]
+tests/test_errores.py::test_1_mexc_rate_limit_reintenta_con_espera_creciente PASSED [ 62%]
+tests/test_errores.py::test_1_mexc_sin_respuesta_pausa_al_agente PASSED  [ 66%]
+tests/test_errores.py::test_2_dato_atrasado_no_opera PASSED              [ 70%]
+tests/test_errores.py::test_3_ollama_detenido PASSED                     [ 74%]
+tests/test_errores.py::test_4_json_invalido_se_rechaza PASSED            [ 77%]
+tests/test_errores.py::test_5_api_key_ausente_o_incorrecta PASSED        [ 81%]
+tests/test_errores.py::test_5_sin_api_key_configurada_no_arranca PASSED  [ 85%]
+tests/test_errores.py::test_6_saldo_insuficiente PASSED                  [ 88%]
+tests/test_errores.py::test_7_vela_duplicada_no_se_procesa_dos_veces PASSED [ 92%]
+tests/test_errores.py::test_8_reinicio_recupera_estado_sin_duplicar PASSED [ 96%]
+tests/test_errores.py::test_9_detener_bloquea_ordenes_y_conserva_posicion PASSED [100%]
+
+============================== warnings summary ===============================
+.venv\Lib\site-packages\fastapi\testclient.py:1
+  C:\Users\lgram\eth-mexc-agent\backend\.venv\Lib\site-packages\fastapi\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================== 27 passed, 1 warning in 1.96s ========================

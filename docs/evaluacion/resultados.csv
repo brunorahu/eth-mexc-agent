@@ -1,0 +1,4 @@
+estrategia,run_id,ciclos,desde,hasta,patrimonio_final_liquidado,rendimiento_neto,max_drawdown,compras,ventas,operaciones_cerradas,win_rate,costos_totales,comisiones,deslizamiento,acciones_rechazadas,latencia_llm_ms_media,latencia_llm_ms_p95,ciclo_ms_medio
+Agente con LLM local,replay-20261118T001233-agent_llm,482,2025-07-21,2026-11-15,23554.09,-0.5289181080897374,-0.6932656765126035,44,44,44,0.4772727272727273,1447.98,0.0,1447.98,0,2265.022199170125,3201.69,2265.1290456431534
+Modelo sin LLM (regla δ),replay-20261118T001233-model_only,482,2025-07-21,2026-11-15,23554.09,-0.5289181080897374,-0.6932656765126035,44,44,44,0.4772727272727273,1447.98,0.0,1447.98,0,,,0.09647302904564316
+Comprar y mantener,replay-20261118T001233-buy_hold,482,2025-07-21,2026-11-15,25467.64,-0.49064712430416,-0.648897639213434,1,0,0,,23.74,0.0,23.74,0,,,0.04439834024896265
